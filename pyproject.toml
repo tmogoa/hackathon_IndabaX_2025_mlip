@@ -1,0 +1,19 @@
+[project]
+name = "hackathon-indabax-2025-mlip"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jax-md",
+    "jax[cuda12]==0.4.33",
+    "mlip>=0.1.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv.sources]
+jax-md = { git = "https://github.com/jax-md/jax-md.git" }
